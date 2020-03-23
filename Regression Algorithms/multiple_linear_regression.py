@@ -32,3 +32,5 @@ multiple_linear_regression.predict(np.array([[10,35],[5,35]]))
 # output : array([[11046.35815877],[ 3418.85455609]])
 # yani : aynı yasta insanlar biri 11bina lırken diğeri 3bin alıyor
 # çünkü biri 10 yıl diğeri 5 yıl tecrübeli
+
+#
