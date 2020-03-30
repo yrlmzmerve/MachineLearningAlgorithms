@@ -31,7 +31,7 @@ linear_reg = LinearRegression()
 
 #mavi noktaları oluşturduk
 x=df.deneyim.values.reshape(-1,1)
-y=df.maas.values
+y=df.maas.values.reshape(-1,1)
 
 # fit ettik
 linear_reg.fit(x, y)
