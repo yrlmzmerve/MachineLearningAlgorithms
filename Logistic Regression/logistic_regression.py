@@ -25,10 +25,18 @@ x = (x_data - np.min(x_data)) / (np.max(x_data)-np.min(x_data)).values
 # x'tei tüm değerler 0'la 1 arasında olmuş oldu.
 # datamızdaki tüm veriler 0 ile 1 arasında olduğundan lojistik regr. için uygun data olmuş oldu.
 
-# Trin Test Split 
+# Train Test Split 
     
 from sklearn.model_selection import train_test_split
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+
+#columnlarla rowun yerilerini ters çevireceğiz
+#rowlar feature oldu
+x_train = x_train.T
+x_test = x_test.T
+y_train = y_train.T
+y_test = y_test.T
+
 
 
