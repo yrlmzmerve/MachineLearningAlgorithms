@@ -85,7 +85,37 @@ def forward_backwar_propagation(w,b,x_train,y_train):
     
     return cost,gradients 
     # gradient : parametrelerin depolandiği dictionary
-
+   
+#%% Implementing Update Parameters 
+    
+# Weight ile Bias'ı update yapacağız.
+    
+def update(w, b, x_train, y_train, learning_rate,number_of_iteration):
+    cost_list = []
+    cost_list2 = []
+    index = []
+    
+    # updating(learning) parameters is number_of_iterarion times
+    for i in range(number_of_iterarion):
+        # make forward and backward propagation and find cost and gradients
+        cost,gradients = forward_backward_propagation(w,b,x_train,y_train)
+        cost_list.append(cost)
+        # lets update
+        w = w - learning_rate * gradients["derivative_weight"]
+        b = b - learning_rate * gradients["derivative_bias"]
+        if i % 10 == 0:
+            cost_list2.append(cost)
+            index.append(i)
+            print ("Cost after iteration %i: %f" %(i, cost))
+            
+    # we update(learn) parameters weights and bias
+    parameters = {"weight": w,"bias": b}
+    plt.plot(index,cost_list2)
+    plt.xticks(index,rotation='vertical')
+    plt.xlabel("Number of Iterarion")
+    plt.ylabel("Cost")
+    plt.show()
+    return parameters, gradients, cost_list
 
 
 
