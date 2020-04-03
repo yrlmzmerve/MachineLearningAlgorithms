@@ -13,6 +13,7 @@
   a. R Square with Random Forest
   b. R Square with Linear Regression
 ```
+* ##### R_Square yapılan predictlerin souçlarının ne kadar iyi olduğunu değerlendirmemizi sağlar. Değer 1'e ne kadar yakınsa sonuç o kadar iyi demektir.
 
 ```
 3. Logistic Regression Classification
@@ -21,7 +22,6 @@
 ```
 
 
-* ##### R_Square yapılan predictlerin souçlarının ne kadar iyi olduğunu değerlendirmemizi sağlar. Değer 1'e ne kadar yakınsa sonuç o kadar iyi demektir.
 
  <a href="http://fvcproductions.com"><img src="https://www.teradata.com/getattachment/Blogs-(1)/The-Tree-of-Machine-Learning-Algorithms/The-Tree-of-Machine-Learning-algorithms-Enrico-Galimberti.jpg" alt="FVCproductions"></a>
  
