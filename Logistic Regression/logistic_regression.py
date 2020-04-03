@@ -38,5 +38,31 @@ x_test = x_test.T
 y_train = y_train.T
 y_test = y_test.T
 
+# x_train ve y_train datalarını logistig reg modelini oluşturmak için kullanacağız
+# x_test ve y_test datalarıyla modelimizi test edeceğiz
+
+#%% 
+# Parameter Initialize and Sigmoid Func
+
+# dimension: 4096 tane pikselimiz yani bizim datamızda 30 tane feature'ımız'
+# 30 tane feature varsa 30 tane dimension olması lazım yani dimension = 30
+def Initialize_weights_and_bias(dimension):
+    
+    w = np.full((dimension,1),0.01)
+    # bu komut dimension'a birlik matrix oluşturur ve elemanları 0.01den oluşur
+    b = 0.0 #♣float olması için
+    return w,b
+
+# w,b = Initialize_weights_and_bias(30)
+
+
+#%% Sigmoid Function
+# formül = f(x) = 1 / (1+ e(üzeri)(-x))    
+
+def sigmoid(z):
+    y_head = 1/(1+ np.exp(-z))
+    return y_head
+
+
 
 
