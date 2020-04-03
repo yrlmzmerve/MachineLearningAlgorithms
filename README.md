@@ -15,7 +15,7 @@
 ```
 
 ```
-3. Logistic Regression
+3. Logistic Regression Classification
   *. Kanser datasını inceleme
   *. Train & Test datası oluşturma
 ```
