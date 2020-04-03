@@ -64,5 +64,28 @@ def sigmoid(z):
     return y_head
 
 
+#%% Implementing Forward and Backward Propagation
+    
+def forward_backwar_propagation(w,b,x_train,y_train):
+    
+    # Forward Propagation
+    
+# matrix çarpımlarında 1. matrixin columnu ile 2. matrixin row sayısı aynı olmalı
+# bu yüzden w'nin T'nu aldık
+    z = np.dot(w.T, x_train) + b
+    y_head = sigmoid(z)
+    loss = -y_train*np.log(y_head) - (1-y_train)*np.log(1-y_head)
+    cost = (np.sum(loss))/x_train.shape[1] #normalize etmek gibi bir durum
+    
+    
+    # Backward Propagation
+    derivative_weight = (np.dot(x_train,((y_head-y_train).T)))/x_train.shape[1] # x_train.shape[1]  is for scaling
+    derivative_bias = np.sum(y_head-y_train)/x_train.shape[1]                 # x_train.shape[1]  is for scaling
+    gradients = {"derivative_weight": derivative_weight, "derivative_bias": derivative_bias}
+    
+    return cost,gradients 
+    # gradient : parametrelerin depolandiği dictionary
+
+
 
 
