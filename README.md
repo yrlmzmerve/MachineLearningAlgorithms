@@ -14,6 +14,12 @@
   b. R Square with Linear Regression
 ```
 
+```
+3. Logistic Regression
+  *. Kanser datasını inceleme
+  *. Train & Test datası oluşturma
+```
+
 
 * ##### R_Square yapılan predictlerin souçlarının ne kadar iyi olduğunu değerlendirmemizi sağlar. Değer 1'e ne kadar yakınsa sonuç o kadar iyi demektir.
 
