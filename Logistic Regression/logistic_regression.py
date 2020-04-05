@@ -133,3 +133,24 @@ def predict(w,b,x_test):
 
     return Y_prediction
 
+
+# %% logistic_regression
+def logistic_regression(x_train, y_train, x_test, y_test, learning_rate ,  num_iterations):
+    # initialize
+    dimension =  x_train.shape[0]  # that is 30
+    w,b = initialize_weights_and_bias(dimension)
+    # do not change learning rate
+    
+    #forward ve backward propagation metodu update metodunda çağrılıyor
+    parameters, gradients, cost_list = update(w, b, x_train, y_train, learning_rate,num_iterations)
+    
+    #labelleri bilinmeden çalıştırılan datanın label sonucu 
+    y_prediction_test = predict(parameters["weight"],parameters["bias"],x_test)
+
+    # Print test Errors
+    print("test accuracy: {} %".format(100 - np.mean(np.abs(y_prediction_test - y_test)) * 100))
+    
+logistic_regression(x_train, y_train, x_test, y_test,learning_rate = 1, num_iterations = 300)    
+
+
+
