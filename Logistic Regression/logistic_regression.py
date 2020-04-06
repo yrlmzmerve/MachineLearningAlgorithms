@@ -153,4 +153,17 @@ def logistic_regression(x_train, y_train, x_test, y_test, learning_rate ,  num_i
 logistic_regression(x_train, y_train, x_test, y_test,learning_rate = 1, num_iterations = 300)    
 
 
+#%% sklearn with  LR
+
+from sklearn.linear_model import LogisticRegression
+
+lr = LogisticRegression()
+
+lr.fit(x_train.T, y_train.T)
+
+#" % ka. dpgru predict ettiğimizi öğrenme
+print("test accuracy {}",format(lr.score(x_test.T, y_test.T)))
+# output : 0.9736842105263158
+
+
 
