@@ -36,3 +36,4 @@ from sklearn.ensemble import RandomForestClassifier
 randomForest = RandomForestClassifier(n_estimators = 100, random_state=1)
 randomForest.fit(x_train, y_train)
 print("Random Forest Tree Score {}".format(randomForest.score(x_test, y_test)))
+
