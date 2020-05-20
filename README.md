@@ -22,28 +22,13 @@
 3. Logistic Regression Classification
   a. Kanser datasını inceleme
   b. Train & Test datası oluşturma
-```
-
-```
 4. K-Nearest Neighbour (KNN)
-```
-
-```
 5. Support Vector Machine (SVM) Classification
-```
-
-```
 6. Naive Bayes Classification
-```
-
-```
 7. Desicion Tree Classification
-```
-
-```
 8. Random Forest Classification
+9. Evaluation Classification Model - Confuaion Matrix 
 ```
-
 
  <a href="http://fvcproductions.com"><img src="https://www.teradata.com/getattachment/Blogs-(1)/The-Tree-of-Machine-Learning-Algorithms/The-Tree-of-Machine-Learning-algorithms-Enrico-Galimberti.jpg" alt="FVCproductions"></a>
  
