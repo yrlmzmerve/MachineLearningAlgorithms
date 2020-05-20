@@ -1,5 +1,6 @@
 # Machine Learning Algorithms
 
+## Regression 
 ```
 1. Regression Algorithms
   a. Linear Regression
@@ -14,6 +15,8 @@
   b. R Square with Linear Regression
 ```
 * ##### R_Square yapılan predictlerin souçlarının ne kadar iyi olduğunu değerlendirmemizi sağlar. Değer 1'e ne kadar yakınsa sonuç o kadar iyi demektir.
+
+## Classification
 
 ```
 3. Logistic Regression Classification
